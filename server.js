@@ -31,9 +31,7 @@ app.use((err, req, res, next) => {
 });
 
 
-// app.get("/", errorHandler((req, res, next) => {
-//    res.send("")
-// }))
+
 
 app.use('/',userRoute)
 const PORT = process.env.PORT || 3000
