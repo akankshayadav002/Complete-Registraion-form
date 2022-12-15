@@ -16,34 +16,11 @@ router.get('/login', function (req, res, next) {
 });
 router.post("/signup", errorHandler(signUp))
 router.post("/login", errorHandler(login))
-router.get('/profile', function (req, res, next) {
-	console.log("profile");
-	User.findOne({email:req.session.email},function(err,data){
-		console.log("data");
-		console.log(data);
-		if(!data){
-			res.redirect('/');
-		}else{
-			//console.log("found");
-			return res.render('data.ejs', {"name":data.name,"email":data.email});
-		}
-	});
-});
+
 
 router.get('/logout', function (req, res, next) {
 	return res.redirect('/')
-	// if (req.session) {
-    
-    // req.session.destroy(function (err) {
-	// 	console.log("log")
-    // 	if (err) {
-    // 		return next(err);
-    // 	} else {
-	// 		console.log("logout")
-    // 		return res.redirect('/');
-    // 	}
-    // });
-
+	
 });
 
 router.get('/forget', function (req, res, next) {
