@@ -1,0 +1,37 @@
+{
+  "name": "Template Node.js",
+  "version": "1.0.0",
+  "description": "The system is meant for a hotel to display rooms for customers to view and book via web application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Surajnanda334/Node-Template.git"
+  },
+  "keywords": [
+    "Node",
+    "Template"
+  ],
+  "author": "Suraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Surajnanda334/Node-Template/issues"
+  },
+  "homepage": "https://github.com/Surajnanda334/Node-Template#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.7.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
