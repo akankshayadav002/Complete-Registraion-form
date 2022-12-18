@@ -1,2 +1,1 @@
-# Node template
-The system is meant to provide a basic template and also provides a mongoDB connection and also has user routes like signup and login
+This project contains a complete login and signup form.

@@ -11,10 +11,12 @@ router.get('/', errorHandler(homePage));
 router.get('/login', errorHandler(loginPage));
 router.post("/signup", errorHandler(signUp))
 router.post("/login", errorHandler(login))
+
 router.get('/profile', errorHandler(profile));
 router.get('/logout', errorHandler(logout));
 router.get('/forget', errorHandler(forgetPage));
 router.post('/forget', errorHandler(forget));
+
 
 
 module.exports = router
